@@ -1,0 +1,205 @@
+{
+  "version": "v1-1",
+  "version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+  "parent": null,
+  "parent_id": null,
+  "timestamp": "2026-04-22T11:35:02.108214+00:00",
+  "summary": "웹 앱 개발 프롬프트: \"30을 잡아라!\"\n1. 게임 개요\n게임명: 30을 잡아라!\n\n장르: 전략적 수 연산 체험형 게임 (대화면 터치 최적화)\n\n핵심 목표: 1~20 사이의 숫자 공 3개를 선택하고, 추가 연산(+/-)을 통해 합계를 '30'에 가장 가깝게 맞추기.\n\n2. 기술 요구 사항\n\nUI/UX: 대화면 터치를 고려한 큼직한 버튼과 직관적인 인터페이스.\n\n애니메이션: 부드러운 공의 움직임 및 피드백 효과 (아래 세부 사항 참고).\n\n3. 게임 상세 로직 및 단계 (Step-by-Step)\n단계 1: 시작 화면 (Start Screen)\n구성: 게임 제목, 참가자 이름/번호 선택 영역, 'START' 버튼.\n\n효과: * START 버튼 클릭 시 크기가 살짝 커지는 클릭 피드백.\n\n시작 직후 \"GO!\" 팝업이 짧게 등장하며 화면이 밝아지며 게임 진입.\n\n단계 2: 숫자 선택 (Selection Phase)\n제한 시간: 전체 게임 시간 90초 (타이머 상단 표시).\n\n배경: 1~20 숫자가 적힌 연두색 숫자 공들이 화면을 천천히 떠다님.\n\n액션: 플레이어가 공을 터치하여 총 3개 선택.\n\n효과: * 터치 시 \"팡!\" 하는 클릭 효과와 함께 해당 숫자가 하단 3개의 네모 슬롯으로 이동.\n\n슬롯에 채워질 때 부드럽게 꽂히는 애니메이션과 살짝 빛나는 효과.\n\n일정 시간이 지나면 선택했던 공을 다시 선택(수정) 가능하도록 설계.\n\n단계 3: 합계 조절 (Adjustment Phase)\n구성: 현재 선택된 3개 숫자의 합계 표시, 목표값 '30' 표시.\n\n조절 버튼: 주황색(+) 공과 파란색(-) 공 배치.\n\n로직: * 합계 < 30 : 주황색(+) 클릭 시 1씩 증가.\n\n합계 > 30 : 파란색(-) 클릭 시 1씩 감소.\n\n효과: * 3칸이 모두 채워지면 슬롯 테두리 강조.\n\n버튼 클릭 시 눌림 효과 및 '+1 / -1' 텍스트가 위/아래로 떠오르는 애니메이션.\n\n합계가 30 근처일 때 숫자 박스가 미세하게 떨리는 긴장 효과 추가.\n\n종료: 90초 종료 시점의 합계가 최종 점수가 됨.\n\n단계 4: 타이머 및 상태 피드백\n타이머: 기본 안정적인 색상 → 10초 이하일 때 빨간색 깜빡임 효과.\n\n단계 5: 결과 및 순위 (Result Screen)\n구성: \"TIME UP\" 중앙 팝업, 최종 합계 숫자 확대, 목표값 30과의 차이(절대값) 강조.\n\n순위 산출: 여러 명의 플레이 데이터 저장 후, 30과의 차이가 가장 적은 순서대로 랭킹 표시.\n\n효과: * 순위 리스트가 아래에서 위로 올라오는 애니메이션.\n\n1등(우승자)에게는 반짝이 효과 부여.\n\n4. 디자인 가이드 (CSS)\n메인 컬러: * 숫자 공: 연두색 (#99FF00 계열)\n\n증가 버튼: 주황색 (#FFA500)\n\n감소 버튼: 파란색 (#0000FF)\n\n폰트: 가독성이 좋은 굵은 고딕체 계열.\n\n레이아웃: 상단(타이머/정보) - 중앙(숫자 공 영역) - 하단(슬롯 및 조절 버튼).",
+  "changes": [
+    {
+      "name": "appHelper.ts",
+      "path": "appHelper.ts",
+      "type": "Add"
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "type": "Add"
+    },
+    {
+      "name": "main.ts",
+      "path": "main.ts",
+      "type": "Add"
+    },
+    {
+      "name": "app.ts",
+      "path": "app.ts",
+      "type": "Add"
+    },
+    {
+      "name": "data.json",
+      "path": "data.json",
+      "type": "Add"
+    },
+    {
+      "name": "main.js",
+      "path": "main.js",
+      "type": "Add"
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "Add"
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "tsconfig.json",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_64.webp",
+      "path": "assets/thumbnail_64.webp",
+      "type": "Add"
+    },
+    {
+      "name": "click.mp3",
+      "path": "assets/click.mp3",
+      "type": "Add"
+    },
+    {
+      "name": "pop.mp3",
+      "path": "assets/pop.mp3",
+      "type": "Add"
+    },
+    {
+      "name": "cheer.mp3",
+      "path": "assets/cheer.mp3",
+      "type": "Add"
+    },
+    {
+      "name": "icon.webp",
+      "path": "assets/icon.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail.webp",
+      "path": "assets/thumbnail.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_128.webp",
+      "path": "assets/thumbnail_128.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_256.webp",
+      "path": "assets/thumbnail_256.webp",
+      "type": "Add"
+    },
+    {
+      "name": "bgm.mp3",
+      "path": "assets/bgm.mp3",
+      "type": "Add"
+    },
+    {
+      "name": "timeup.mp3",
+      "path": "assets/timeup.mp3",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_512.webp",
+      "path": "assets/thumbnail_512.webp",
+      "type": "Add"
+    }
+  ],
+  "no_changes": [],
+  "file_index": {
+    "app.ts": {
+      "hash": "bc2f78542fa17c6af1cffcbfe0fda8aa4b0b79ce3bba4805efcab6cb1f18ec73",
+      "size": 23135,
+      "mtime": 1776857701.3999927
+    },
+    "main.js": {
+      "hash": "db2612a85725543338cd17b60a616c3171fef72a68d730d8437c2f7374b75bca",
+      "size": 364922,
+      "mtime": 1776857702.1054597
+    },
+    "main.ts": {
+      "hash": "bb854eedcafcb798e1a5e010af89e3cf951fa86f53d9c08a9cdc128ccaaed047",
+      "size": 5099,
+      "mtime": 1775728961.0
+    },
+    "data.json": {
+      "hash": "e6d2819b0ebf01a61dc8ccf595500bdba2b23a46e3322f9196cac57a8f071a64",
+      "size": 2196,
+      "mtime": 1776857702.027054
+    },
+    "style.css": {
+      "hash": "9441d16d7ca5dc327f1d95eff470b99d2eac975e25e134c98ad94332e1c95480",
+      "size": 754,
+      "mtime": 1775728961.0
+    },
+    "index.html": {
+      "hash": "0f57e329738172cfd0a7bda4003e050b56dcbdb086f05c1a2101f1ee3eabbb90",
+      "size": 13358,
+      "mtime": 1775728961.0
+    },
+    "appHelper.ts": {
+      "hash": "9a227b6e481f1ca1ab8eb95c594edeee22bace907eac463a45c98adaaeac71e4",
+      "size": 7345,
+      "mtime": 1775815245.0
+    },
+    "tsconfig.json": {
+      "hash": "2d4ae3b301fae02ce25a2fd5a7b3ef2ba161ecb983a496dd5294ab5ec7f9b01c",
+      "size": 684,
+      "mtime": 1775728961.0
+    },
+    "assets/bgm.mp3": {
+      "hash": "7bca59ce9df65a76907c6495802b2b83589982941a20701e1ca27c61a488c6b8",
+      "size": 1894608,
+      "mtime": 1776857702.013792
+    },
+    "assets/pop.mp3": {
+      "hash": "c59c829015e09128c310f8a62df9e722e5e2ce0f7af92a703622307592db25a9",
+      "size": 151340,
+      "mtime": 1776857702.016754
+    },
+    "assets/cheer.mp3": {
+      "hash": "3de35ccb52c5a171c2f5a4148194a18864a6b118dc1bf2a6137e307c8e127c40",
+      "size": 8090,
+      "mtime": 1776857702.022195
+    },
+    "assets/click.mp3": {
+      "hash": "3f3cc5113e03fcae6862b5eaf6dc70d531d98356f93717197e7013d49c80f83c",
+      "size": 17898,
+      "mtime": 1776857702.0188293
+    },
+    "assets/icon.webp": {
+      "hash": "45f0ec6f62092921d350bd7c7a705929e5049426ebd9f3eae03077f5b6e3477a",
+      "size": 1008,
+      "mtime": 1775728961.0
+    },
+    "assets/timeup.mp3": {
+      "hash": "a16d7dea2540cbaa11c775782c3831f074a6dd1ffb0dc7532efebbbc0fe3565c",
+      "size": 244458,
+      "mtime": 1776857702.021228
+    },
+    "assets/thumbnail.webp": {
+      "hash": "574b084aacb120f466bc39b0b597b5bfb93b11ef48d191ded7cf4ff7933c7578",
+      "size": 9088,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_64.webp": {
+      "hash": "314d918a5b0461d2fc5d867ee20a5ff3942cc5e0fb4c2851915546af3c535225",
+      "size": 436,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_128.webp": {
+      "hash": "45f0ec6f62092921d350bd7c7a705929e5049426ebd9f3eae03077f5b6e3477a",
+      "size": 1008,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_256.webp": {
+      "hash": "a7a5ddb7aa8cb96c36ff633e43920192687f5e9ff65fac92058fa142eecc2fec",
+      "size": 2080,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_512.webp": {
+      "hash": "3888d7b6b9c2cfb1ec1aa274e79e50d2649ea769c8cb069e51af40b94d26f447",
+      "size": 4290,
+      "mtime": 1775728961.0
+    }
+  },
+  "engine_version": "0.3.1",
+  "request_id": "73a74c7c-0f20-439d-8d90-7fe98edbf76b"
+}

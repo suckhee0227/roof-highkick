@@ -1,0 +1,70 @@
+{
+    "appData": {
+        "gridCols": 4,
+        "gridRows": 7,
+        "targetRange": {
+            "min": 20,
+            "max": 60,
+            "negativeMin": -20,
+            "negativeMax": -10
+        },
+        "numberCards": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "piecesPerRound": 3,
+        "maxAttempts": 3,
+        "tetrominoMinSize": 1,
+        "tetrominoMaxSize": 5,
+        "tetrominoCount": 10,
+        "teamColors": {
+            "team1": "#FF5252",
+            "team2": "#448AFF"
+        },
+        "buildingColors": [
+            "#E74C3C",
+            "#F39C12",
+            "#F1C40F",
+            "#2ECC71",
+            "#3498DB",
+            "#9B59B6",
+            "#E91E63",
+            "#FF5722",
+            "#00BCD4",
+            "#8BC34A"
+        ],
+        "roofColor": "#795548"
+    },
+    "textData": {
+        "title": "지붕 뚫고 하이킥!",
+        "startBtn": "게임 시작",
+        "tutorialTitle": "게임 방법",
+        "tutorialContent": "1. 목표 숫자가 랜덤으로 나타납니다.\n2. 두 팀이 번갈아 숫자카드(1~9)를 더하거나 빼서 목표수를 맞춥니다.\n3. 먼저 맞추면 테트리스 조각 3개를 획득합니다.\n4. 조각을 4x7 판에 쌓아 올리세요.\n5. 지붕 높이에 먼저 도달하면 승리!",
+        "instruction": "숫자카드를 조합하여 목표 숫자를 만드세요!",
+        "page": "",
+        "guideInitial": "숫자카드를 골라<br>목표수를 만들어<br>볼까요?",
+        "guideCorrect": "정답이에요!<br>테트리스 조각을<br>배치하세요!",
+        "guideIncorrect": "다시 한번<br>계산해 볼까요?",
+        "targetLabel": "목표 숫자",
+        "team1Name": "A팀",
+        "team2Name": "B팀",
+        "submitBtn": "정답 확인",
+        "resetBtn": "초기화",
+        "nextRoundBtn": "다음 라운드",
+        "clearExprBtn": "지우기",
+        "winMessage": "승리!",
+        "placeTetrominoMsg": "테트리스 조각을 판에 배치하세요!",
+        "closeBtn": "닫기"
+    },
+    "assetList": {
+        "images": [
+            {
+                "id": "character",
+                "file_path": "guide_character.webp",
+                "width": 0,
+                "height": 0,
+                "isBackgroundImage": false,
+                "isNewAsset": false,
+                "description": "Guide character image"
+            }
+        ],
+        "sounds": []
+    }
+}

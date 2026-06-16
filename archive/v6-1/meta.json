@@ -1,0 +1,206 @@
+{
+  "version": "v6-1",
+  "version_id": "bb19d300-dda8-4a72-a52e-782565ff7a66",
+  "parent": "v5-1",
+  "parent_id": "060f5b6f-ff9e-45e5-8eb3-73ac5f228fd3",
+  "timestamp": "2026-04-22T11:48:29.751357+00:00",
+  "summary": "게임에서 공을 세개 선택하면 아래 모이는데, 세개의 공이 모이는 곳을 네모 슬롯을 만들어 공을 감싸게 해주세요. 주변의 색상을 고려하여 자연스럽게 수정해주세요.",
+  "changes": [
+    {
+      "name": "app.ts",
+      "path": "app.ts",
+      "type": "Change"
+    },
+    {
+      "name": "main.js",
+      "path": "main.js",
+      "type": "Change"
+    }
+  ],
+  "no_changes": [
+    {
+      "path": "appHelper.ts",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "index.html",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "main.ts",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "data.json",
+      "last_version_id": "12131b1a-cb88-488d-a16d-59da7a165a06",
+      "last_version": "v2-1"
+    },
+    {
+      "path": "style.css",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "tsconfig.json",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/thumbnail_64.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/click.mp3",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/pop.mp3",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/cheer.mp3",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/icon.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/thumbnail.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/thumbnail_128.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/thumbnail_256.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/bgm.mp3",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/timeup.mp3",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    },
+    {
+      "path": "assets/thumbnail_512.webp",
+      "last_version_id": "3ab9438c-38f4-4714-bfab-bd22b57f289a",
+      "last_version": "v1-1"
+    }
+  ],
+  "file_index": {
+    "app.ts": {
+      "hash": "9ea710d532cb697037a8fce580a45faf37ecdd5e566c73ae08bba53b349176ce",
+      "size": 27991,
+      "mtime": 1776858509.2180705
+    },
+    "main.js": {
+      "hash": "ef47f32ac1941e4bba574c26d90bb44d421edf10b71ab677166d5a618fd4be00",
+      "size": 369733,
+      "mtime": 1776858509.7478364
+    },
+    "main.ts": {
+      "hash": "bb854eedcafcb798e1a5e010af89e3cf951fa86f53d9c08a9cdc128ccaaed047",
+      "size": 5099,
+      "mtime": 1775728961.0
+    },
+    "data.json": {
+      "hash": "83538ec741075e1abec3cdccf082ec1f195f3cc7d56a253f4436dae2961eedaf",
+      "size": 2173,
+      "mtime": 1776858105.3525052
+    },
+    "style.css": {
+      "hash": "9441d16d7ca5dc327f1d95eff470b99d2eac975e25e134c98ad94332e1c95480",
+      "size": 754,
+      "mtime": 1775728961.0
+    },
+    "index.html": {
+      "hash": "0f57e329738172cfd0a7bda4003e050b56dcbdb086f05c1a2101f1ee3eabbb90",
+      "size": 13358,
+      "mtime": 1775728961.0
+    },
+    "appHelper.ts": {
+      "hash": "9a227b6e481f1ca1ab8eb95c594edeee22bace907eac463a45c98adaaeac71e4",
+      "size": 7345,
+      "mtime": 1775815245.0
+    },
+    "tsconfig.json": {
+      "hash": "2d4ae3b301fae02ce25a2fd5a7b3ef2ba161ecb983a496dd5294ab5ec7f9b01c",
+      "size": 684,
+      "mtime": 1775728961.0
+    },
+    "assets/bgm.mp3": {
+      "hash": "7bca59ce9df65a76907c6495802b2b83589982941a20701e1ca27c61a488c6b8",
+      "size": 1894608,
+      "mtime": 1776857702.013792
+    },
+    "assets/pop.mp3": {
+      "hash": "c59c829015e09128c310f8a62df9e722e5e2ce0f7af92a703622307592db25a9",
+      "size": 151340,
+      "mtime": 1776857702.016754
+    },
+    "assets/cheer.mp3": {
+      "hash": "3de35ccb52c5a171c2f5a4148194a18864a6b118dc1bf2a6137e307c8e127c40",
+      "size": 8090,
+      "mtime": 1776857702.022195
+    },
+    "assets/click.mp3": {
+      "hash": "3f3cc5113e03fcae6862b5eaf6dc70d531d98356f93717197e7013d49c80f83c",
+      "size": 17898,
+      "mtime": 1776857702.0188293
+    },
+    "assets/icon.webp": {
+      "hash": "45f0ec6f62092921d350bd7c7a705929e5049426ebd9f3eae03077f5b6e3477a",
+      "size": 1008,
+      "mtime": 1775728961.0
+    },
+    "assets/timeup.mp3": {
+      "hash": "a16d7dea2540cbaa11c775782c3831f074a6dd1ffb0dc7532efebbbc0fe3565c",
+      "size": 244458,
+      "mtime": 1776857702.021228
+    },
+    "assets/thumbnail.webp": {
+      "hash": "574b084aacb120f466bc39b0b597b5bfb93b11ef48d191ded7cf4ff7933c7578",
+      "size": 9088,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_64.webp": {
+      "hash": "314d918a5b0461d2fc5d867ee20a5ff3942cc5e0fb4c2851915546af3c535225",
+      "size": 436,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_128.webp": {
+      "hash": "45f0ec6f62092921d350bd7c7a705929e5049426ebd9f3eae03077f5b6e3477a",
+      "size": 1008,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_256.webp": {
+      "hash": "a7a5ddb7aa8cb96c36ff633e43920192687f5e9ff65fac92058fa142eecc2fec",
+      "size": 2080,
+      "mtime": 1775728961.0
+    },
+    "assets/thumbnail_512.webp": {
+      "hash": "3888d7b6b9c2cfb1ec1aa274e79e50d2649ea769c8cb069e51af40b94d26f447",
+      "size": 4290,
+      "mtime": 1775728961.0
+    }
+  },
+  "engine_version": "0.3.1",
+  "request_id": "2dea3597-9a07-4e99-a4f1-5bb25193ce41"
+}

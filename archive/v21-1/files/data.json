@@ -1,0 +1,88 @@
+{
+  "appData": {
+    "gameTime": 90,
+    "targetScore": 30,
+    "ballCount": 20,
+    "cancel_delay_time": 4
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": true,
+    "ko": {
+      "title": "30을 잡아라!",
+      "startBtn": "START",
+      "go": "GO!",
+      "timeUp": "TIME UP!",
+      "sumLabel": "합계:",
+      "targetLabel": "목표: 30",
+      "emptySlotMsg": "공 3개를 선택하세요",
+      "retryBtn": "다시하기",
+      "rankTitle": "🏆 랭킹 🏆",
+      "diffLabel": "차이",
+      "roundCountLabel": "라운드 수:",
+      "turnTitle": "차례",
+      "stopBtn": "STOP",
+      "turnEnd": "TURN END!",
+      "leftTeam": "왼쪽 팀",
+      "rightTeam": "오른쪽 팀",
+      "vsLabel": "VS",
+      "timeLabel": "남은 시간:"
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": [
+      {
+        "id": "bgm",
+        "file_path": "assets/bgm.mp3",
+        "duration_seconds": 60,
+        "volume": 0.4,
+        "isBackgroundMusic": true,
+        "isNewAsset": false,
+        "description": "Tense and exciting game show style background music"
+      },
+      {
+        "id": "pop",
+        "file_path": "assets/pop.mp3",
+        "duration_seconds": 1,
+        "volume": 0.8,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "A cheerful popping sound when a bubble or ball is touched"
+      },
+      {
+        "id": "click",
+        "file_path": "assets/click.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.8,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "UI button click sound with positive feedback"
+      },
+      {
+        "id": "timeup",
+        "file_path": "assets/timeup.mp3",
+        "duration_seconds": 3,
+        "volume": 0.8,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "Buzzer sound indicating time is up"
+      },
+      {
+        "id": "cheer",
+        "file_path": "assets/cheer.mp3",
+        "duration_seconds": 4,
+        "volume": 0.8,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "Crowd cheering sound for the winner of the game"
+      }
+    ]
+  }
+}
